@@ -45,7 +45,9 @@ font-size: 1.5rem;}
 @utility row{
     @apply flex flex-row items-center gap-2;
 }
-
+@utility col{
+    @apply flex flex-col ;
+}
 @utility circle{
     @apply rounded-full px-2 py-1;
 }

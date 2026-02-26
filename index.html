@@ -15,18 +15,24 @@
   </head>
   <body>
     <!--header-->
-    <header class="sticky top-0">
-      <div class="container mx-auto px-28">
-       
-        <div class="flex justify-between py-2 gap-16">
-          <div class="row gap-28">
+    <header class="sticky top-0 px-8 lg:px-2 ">
+      <div class="   mx-auto  max-w-7xl  ">
+        <div class="row  py-2 gap-16 justify-between">
+          
+           <div class="menu  md:hidden"> <i class="fa-solid fa-bars-staggered "></i></div>
+
+           
             <img
               src="./assets/imgs/header/logo-1.svg"
               alt=""
               width="107"
               height="54"
+              "
             />
-            <ul class="flex items-center gap-10 uppercase">
+           
+           
+            <nav class="  uppercase hidden md:block text-sm">
+            <ul  class="row gap-10 text-sm ">
               <li class="hover:text-primary">
                 <a href="#">home</a> <i class="fa-solid fa-angle-down"></i>
               </li>
@@ -34,7 +40,8 @@
                 <a href="#">shop</a> <i class="fa-solid fa-angle-down"></i>
               </li>
               <li class="hover:text-primary">
-                <a href="#">collection</a> <i class="fa-solid fa-angle-down"></i>
+                <a href="#">collection</a>
+                <i class="fa-solid fa-angle-down"></i>
               </li>
               <li class="hover:text-primary"><a href="#">blogs</a></li>
               <li class="hover:text-primary">
@@ -42,18 +49,19 @@
               </li>
               <li class="hover:text-primary"><a href="#">by vegist</a></li>
             </ul>
-          </div>
-          <div class="row gap-4 text-3xl font-thin">
+            </nav>
+          
+          <div class="row gap-4 text-2xl  ">
             <i class="fa-solid fa-magnifying-glass"></i>
 
-            <div class="relative">
+            <div class="relative hidden md:block">
               <span
                 class="absolute top-[-4px] right-[-12px] font-bold circle bg-primary text-xs text-onbutton"
               >
                 0</span
-              ><i class="fa-regular fa-heart"></i>
+              ><i class="fa-regular fa-heart "></i>
             </div>
-            <div class="relative">
+            <div class="relative hidden md:block">
               <span
                 class="absolute top-[-4px] right-[-12px] font-bold circle bg-primary text-xs text-onbutton"
               >
@@ -69,12 +77,63 @@
     <main>
       <!--hero-->
       <section
-        class="bg-[url('./../imgs/hero/bghero.jpg')] bg-cover bg-no-repeat"
+        class="bg-[url('./../imgs/hero/bghero.jpg')] bg-cover bg-no-repeat bg-center py-32"
       >
-        <div class="container bg-amber-950">
-          ggggggggggggg
+        <div class="container py-24">
+          <h1 class="capitalize">farmfood freshbox</h1>
+          <p class="capitalize py-3">fresh & healthy</p>
+          <a
+            href="#"
+            class="uppercase underline decoration-[3px] decoration-primary"
+            >shop now</a
+          >
+        </div>
+      </section >
+      
+      <section  class="py-20">
+        <div class="row">
+          <div class="row  gap-0 ">
+            <div >
+              <img 
+                src="./assets/imgs/public/freshvegatable.jpg"
+                alt="fresh vegatable" 
+              />
+            </div>
+            <div >
+              <p>Organic juice</p>
+              <h2>Fresh vegetable on our product</h2>
+              <a href="#">shop now</a>
+            </div>
+          </div>
+          <div class="row gap-0  bg-[#E3F2F9]">
+            <div class="flex justify-center">
+              <img
+                src="./assets/imgs/public/eggplantfreshmeat.jpg"
+                alt="egg plant fresh meat" 
+              />
+            </div>
+            <div >
+              <p>Fresh food</p>
+              <h2>Eggplant fresh meat</h2>
+              <a href="#">shop now</a>
+            </div>
+          </div>
+          <div class="row bg-[#ede9e6] ">
+            <div>
+              <img
+                src="./assets/imgs/public/egg.jpg"
+                alt="Organic egg plant"  />
+            </div>
+            <div>
+              <p>Organic egg plant</p>
+              <h2>Egg & sea festive still life</h2>
+              <a href="#">shop now</a>
+            </div>
+          </div>
         </div>
       </section>
+
+     
     </main>
   </body>
 </html>
