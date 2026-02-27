@@ -17,7 +17,7 @@
     <!--header-->
     <header class="sticky top-0 px-8 lg:px-2 bg-onbutton py-2 shadow-sm ">
       <div class="   mx-auto  max-w-7xl  ">
-        <div class="row  py-2 gap-16 justify-between">
+        <div class="row  py-1.5 gap-4 justify-between">
           
            <div class="menu  md:hidden"> <i class="fa-solid fa-bars-staggered "></i></div>
 
@@ -31,8 +31,8 @@
             />
            
            
-            <nav class="  uppercase hidden md:block text-sm">
-            <ul  class="row gap-10 text-sm ">
+            <nav class="  uppercase hidden md:block text-sm ">
+            <ul  class="row gap-8 text-sm ">
               <li class="hover:text-primary">
                 <a href="#">home</a> <i class="fa-solid fa-angle-down"></i>
               </li>
@@ -77,62 +77,101 @@
     <main>
       <!--hero-->
       <section
-        class="bg-[url('./../imgs/hero/bghero.jpg')] bg-cover bg-no-repeat bg-center py-32"
+        class="bg-[url('./../imgs/hero/bghero.jpg')] bg-cover bg-no-repeat bg-center py-32 px-10 lg:px-4"
       >
         <div class="mx-auto  max-w-7xl  tracking-wide py-28">
-          <h1 class="capitalize text-[50px]">farmfood freshbox</h1>
-          <p class="     capitalize py-3 text-[26px] font-light">fresh & healthy</p>
+          <h1 class="capitalize text-4xl md:text-[50px]">farmfood freshbox</h1>
+          <p class="     capitalize py-3  text-xl   md:text-[26px] font-light">fresh & healthy</p>
           <a
             href="#"
-            class="uppercase underline decoration-[3px] decoration-primary font-bold text-sm "
+            class="uppercase underline decoration-[3px] decoration-primary font-bold text-xs md:text-sm "
             >shop now</a
           >
         </div>
       </section >
       
-      <section  class="py-20">
-        <div class="row">
-          <div class="row  gap-0 ">
-            <div >
+      <section  class="py-20 px-8 lg:px-2">
+        <div class="   mx-auto  max-w-7xl  md:row gap-8">
+          <div class="row  bg-[#FAFAFA]">
+            <div  class="overflow-hidden ">
               <img 
                 src="./assets/imgs/public/freshvegatable.jpg"
-                alt="fresh vegatable" 
+                alt="fresh vegatable"
+                class="   w-full h-full object-cover transition-transform duration-300 hover:scale-110" 
               />
             </div>
-            <div >
-              <p>Organic juice</p>
-              <h2>Fresh vegetable on our product</h2>
-              <a href="#">shop now</a>
+            <div class="px-2">
+              <p class="text-muted text-sm">Organic juice</p>
+              <p class="text-xl font-bold py-2 ">Fresh vegetable on our product</p>
+              <a href="#" class="text-sm font-bold text-primary hover:text-secondry">shop now <span class="text-xs"><i class="fa-solid fa-chevron-right "></i> </span></a>
             </div>
           </div>
-          <div class="row gap-0  bg-[#E3F2F9]">
-            <div class="flex justify-center">
+          <div class="row   bg-[#E3F2F9]  px-6">
+            <div class="overflow-hidden"> 
               <img
                 src="./assets/imgs/public/eggplantfreshmeat.jpg"
-                alt="egg plant fresh meat" 
+                alt="egg plant fresh meat"
+                class="w-full h-full transition-transform duration-300 hover:scale-110" 
               />
             </div>
             <div >
-              <p>Fresh food</p>
-              <h2>Eggplant fresh meat</h2>
-              <a href="#">shop now</a>
+              <p  class="text-muted text-sm">Fresh food</p>
+              <p class="text-xl font-bold py-2">Eggplant fresh meat</p>
+              <a href="#" class="text-sm font-bold text-primary hover:text-secondry ">shop now <span class="text-xs"><i class="fa-solid fa-chevron-right "></i> </span></a>
             </div>
           </div>
           <div class="row bg-[#ede9e6] ">
-            <div>
+            <div class="overflow-hidden"> 
               <img
                 src="./assets/imgs/public/egg.jpg"
-                alt="Organic egg plant"  />
-            </div>
-            <div>
-              <p>Organic egg plant</p>
-              <h2>Egg & sea festive still life</h2>
-              <a href="#">shop now</a>
+                alt="Organic egg plant" 
+                class="w-full h-full transition-transform duration-300 hover:scale-110"
+                />
+            </div  >
+            <div class="px-2">
+              <p  class="text-muted text-sm">Organic egg plant</p>
+              <p class="text-xl font-bold py-2">Egg & sea festive still life</p>
+              <a href="#" class="text-sm font-bold text-primary hover:text-secondry">shop now <span class="text-xs"><i class="fa-solid fa-chevron-right "></i> </span></a>
             </div>
           </div>
         </div>
       </section>
+       <section class="service-features px-8 lg:px-2">
+        <div class="mx-auto  max-w-7xl">
+          <div class="items  items row gap-0  flex-wrap tracking-wider " >
+          <div class="row gap-6 border border-dashed border-muted px-12 py-3  " >
+            
+            <div class="text-4xl hover:scale-x-[-1] hover:text-primary  transition-transform duration-300"><i class="fa-regular fa-truck  "></i></div>
+            <div >
+              <p class="font-bold">Free delivary</p>
+              <p class="text-muted text-sm py-2">Orders from all item</p>
+            </div>
+          </div>
+           <div class="row gap-6 border border-dashed border-muted px-12 py-3">
+            <div class="text-4xl hover:scale-x-[-1] hover:text-primary  transition-all duration-300"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div>
+              <p class="font-bold">Return & refund</p>
+              <p class="text-muted text-sm py-2">Money back guarantee</p>
+            </div>
+          </div>
+           <div class="row gap-6 border border-dashed border-muted px-12 py-3">
+            <div class="text-4xl hover:scale-x-[-1] hover:text-primary  transition-all duration-300"><i class="fa-regular fa-headphones"></i></div>
+            <div>
+              <p class="font-bold">Quality support</p>
+              <p class="text-muted text-sm py-2">Alway online 24/7</p>
+            </div>
+          </div>
+           <div class="row  gap-6 border border-dashed border-muted px-12 py-3">
+            <div class="text-4xl hover:scale-x-[-1] hover:text-primary  transition-all duration-300"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <p class="font-bold">Join newslleter</p>
+              <p class="text-muted text-sm py-2">20% off by subscribing</p>
+            </div>
+          </div>
+          </div>
+        </div>
 
+       </section>
      
     </main>
   </body>

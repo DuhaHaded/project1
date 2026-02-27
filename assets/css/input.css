@@ -18,6 +18,8 @@
 
 @layer base{
     *{
+          /*  outline: 1px solid red;*/
+
        margin: 0;
        padding: 0;
         box-sizing: border-box;
@@ -43,7 +45,7 @@ font-size: 1.5rem;}
 
 }
 @utility row{
-    @apply flex flex-row items-center gap-2;
+    @apply flex flex-row items-center gap-2 ;
 }
 @utility col{
     @apply flex flex-col ;
