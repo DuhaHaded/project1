@@ -6,7 +6,9 @@
   "name": "project",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "daisyui": "^5.5.19"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

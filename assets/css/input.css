@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @theme {
 /* colors*/
     --color-backgrond: #f2f3ee;
@@ -10,7 +9,7 @@
     --color-secondry: #000000;
     --color-onbutton: #ffffff;
     --color-muted: #b3b3b3;
-
+    --color-bg:#FAFAFA;
     /*Fonts*/
     --font-Poppins: "Poppins", sans-serif;
 
@@ -42,8 +41,8 @@ h3{
 h4{
 font-size: 1.5rem;}
 
-
 }
+
 @utility row{
     @apply flex flex-row items-center gap-2 ;
 }
@@ -53,3 +52,15 @@ font-size: 1.5rem;}
 @utility circle{
     @apply rounded-full px-2 py-1;
 }
+
+@utility button{
+    @apply bg-primary text-onbutton py-1 px-2 rounded-sm hover:bg-onbutton hover:text-primary hover:shadow-xl;
+}
+
+@layer utilities
+ { @keyframes scroll {
+     0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); } } 
+      .animate-scroll { 
+        animation: scroll 30s linear infinite;
+     }}
