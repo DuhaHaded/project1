@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @theme {
 /* colors*/
@@ -55,6 +56,15 @@ font-size: 1.5rem;}
 
 @utility button{
     @apply bg-primary text-onbutton py-1 px-2 rounded-sm hover:bg-onbutton hover:text-primary hover:shadow-xl;
+}
+@utility icon{
+    @apply  hover:text-onbutton hover:bg-primary p-2 rounded-sm shadow-xl text-center;
+}
+@utility myContainer{
+    @apply mx-auto  max-w-6xl ;
+}
+@utility myLine{
+    @apply border-b border-muted w-60 py-3;
 }
 
 @layer utilities
